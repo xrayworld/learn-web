@@ -1,0 +1,46 @@
+// PREFIX - KEYFRAME
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+}
+// @include keyframes(site) {
+// 0% { opacity: 0; }
+// 100% { opacity: 1; }
+// }
+
+// PREFIX for Hugo Giraudel
+@mixin prefix($property, $value: ()) {
+  #{$property}: $value;
+  #{'-webkit-' + $property}: $value;
+}
+// @include prefix(transform, rotate(45deg))
+// @include prefix(animation, name 11s ease-in-out infinite)
+
+
+// PREFIX - Background Pack
+@mixin background-pack() {
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+// @include background-pack();
+
+
+// PREFIX - Dark Mode
+@mixin dark-mode() {
+  background: black;
+  color: white;
+}
+// @include dark-mode();
+
+
+// PREFIX - Light Mode
+@mixin light-mode() {
+  background: white;
+  color: black;
+}
+// @include light-mode();

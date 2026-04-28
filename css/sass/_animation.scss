@@ -1,0 +1,69 @@
+/* WEBSITE LOADING... */
+.loading-website-fade {
+  pointer-events: none !important;
+  opacity: 0;
+  @include prefix(animation, loading-website-fade ease-in-out 3s !important);
+}
+@include keyframes(loading-website-fade) {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+#loading-website svg { @include prefix(animation, loading-logo ease-in-out 2s infinite); }
+@include keyframes(loading-logo) {
+  0% { @include prefix(transform, translate(-50%,-50%) rotateY(0)); }
+  100% { @include prefix(transform, translate(-50%,-50%) rotateY(360deg)); }
+}
+
+
+
+
+
+/* EARTH */
+.earth-rotation { @include prefix(animation, earth-rotation linear 66s infinite); }
+@include keyframes(earth-rotation) {
+  0% { @include prefix(transform, translate(-50%,-50%) rotateY(-11deg) rotateZ(0)); }
+  50% { @include prefix(transform, translate(-50%,-50%) rotateY(349deg) rotateZ(33deg)); }
+  100% { @include prefix(transform, translate(-50%,-50%) rotateY(709deg) rotateZ(0)); }
+}
+.earth-breath { @include prefix(animation, earth-breath ease-in-out 6s infinite); }
+@include keyframes(earth-breath) {
+  0% { @include prefix(transform, translate(-50%,-50%) scale(1)); }
+  50% { @include prefix(transform, translate(-50%,-50%) scale(0.9)); }
+  100% { @include prefix(transform, translate(-50%,-50%) scale(1)); }
+}
+
+/* WAVE */
+#wave { @include prefix(animation, wave cubic-bezier(0, 0, 0.5, 0.98) 20s infinite); }
+@include keyframes(wave) {
+  0% { width:0; height:0; opacity: 1;}
+  30% { width:1000px;; height:1000px;; opacity: 0; }
+  100% { width:1000px; height:1000px; opacity: 0; }
+}
+
+
+
+/* TUTORIAL */
+@include keyframes(tutorial) {
+  0% { opacity: 0; }
+  70% { opacity: 0; }
+  85% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
+
+
+
+/*S E R V I C E - GALLET ARROWS */
+.service-arrow-left { @include prefix(animation, service-arrow-left ease-in-out 3s infinite); }
+@include keyframes(service-arrow-left) {
+  0% { @include prefix(transform, translate(0,-50%) scale(1)); }
+  50% { @include prefix(transform, translate(-20px,-50%) scale(1.25)); }
+  100% { @include prefix(transform, translate(0,-50%) scale(1)); }
+}
+.service-arrow-right { @include prefix(animation, service-arrow-right ease-in-out 3s infinite); }
+@include keyframes(service-arrow-right) {
+  0% { @include prefix(transform, translate(0,-50%) scale(1)); }
+  50% { @include prefix(transform, translate(20px,-50%) scale(1.25)); }
+  100% { @include prefix(transform, translate(0,-50%) scale(1)); }
+}

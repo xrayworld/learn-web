@@ -1,10 +1,16 @@
-<div align="center">
-  <img src="banner.svg" alt="Subterra — Creative BTL Studio" width="100%"/>
-</div>
+
+<p align="center">
+  <img src="./subterra.GIF" alt="My automatic animation" width="500">
+</p>
 
 <br/>
 
 <div align="center">
+
+# SUBTERRA
+# (Página web)
+
+*"Hecho por www.x-ray.world"*
 
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
@@ -14,16 +20,6 @@
   <img src="https://img.shields.io/badge/License-Private-555555?style=for-the-badge" alt="License"/>
 
 </div>
-
-<br/>
-
-<h1 align="center">
-$\Huge \substack{
-\color{#ffc30f}{\textsf{Subterra}} \\
-\color{#888888}{\pmb{\texttt{Creative BTL Studio Website}}} \\
-\color{#888888}{\texttt{Single-Page · CSS 3D Earth · Lima, PE}}
-}$
-</h1>
 
 <p align="center">
   <em>A full-screen single-page marketing website with a <strong>3D spinning globe built from scratch</strong> — no WebGL, no canvas, no library — using only CSS, SCSS, vanilla JavaScript, and the circle equation.</em>
@@ -435,6 +431,9 @@ sass --watch css/sass/main.scss:css/main.css
 | Click on globe (again) | Spin to a random 3D orientation |
 
 ---
+<div align="center">
+  <img src="banner.svg" alt="Subterra — Creative BTL Studio" width="100%"/>
+</div>
 
 ## 🌐 About
 

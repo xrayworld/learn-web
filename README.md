@@ -9,7 +9,7 @@
 
 # SUBTERRA
 # (Página web)
-## <a href="https://www.x-ray.world/tech"></a>
+ <a href="https://www.x-ray.world/tech"></a>
 
 *"Hecho por www.x-ray.world"*
 
